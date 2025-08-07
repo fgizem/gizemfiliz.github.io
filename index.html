@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gizem Filiz | Cognitive Psychology</title>
+  <meta name="description" content="Cognitive psychologist studying memory, value-directed remembering, and decision processes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#0f172a; --muted:#475569; --accent:#2563eb; --line:#e2e8f0; --chip:#f1f5f9;
+      --card:#fafafa; --shadow: 0 10px 25px rgba(2,6,23,.08);
+      --max: 980px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(150%) blur(6px);border-bottom:1px solid var(--line);z-index:10}
+    nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .navlinks a{margin-left:16px;font-weight:600;color:var(--muted)}
+    .hero{padding:64px 0 32px}
+    .hero .grid{display:grid;grid-template-columns:140px 1fr;gap:24px;align-items:center}
+    .avatar{width:140px;height:140px;border-radius:16px;object-fit:cover;box-shadow:var(--shadow)}
+    h1{font-size:36px;line-height:1.2;margin:0 0 10px}
+    .lead{color:var(--muted);font-size:18px}
+    section{padding:32px 0;border-top:1px solid var(--line)}
+    h2{font-size:24px;margin:0 0 12px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 0}
+    .chip{background:var(--chip);border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:12px;color:#0b1220}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .pub{margin:10px 0}
+    .muted{color:var(--muted)}
+    .btn{display:inline-block;background:var(--fg);color:white;padding:10px 14px;border-radius:10px;font-weight:600}
+    .btn-outline{display:inline-block;border:1px solid var(--line);padding:10px 14px;border-radius:10px;font-weight:600;color:var(--fg);background:white}
+    footer{padding:40px 0;color:var(--muted)}
+    .social a{margin-right:14px}
+    .kicker{font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}
+    .list-clean{margin:0;padding-left:18px}
+    @media (max-width:800px){
+      .hero .grid{grid-template-columns:1fr;}
+      .avatar{width:110px;height:110px}
+      .grid-2,.grid-3{grid-template-columns:1fr}
+      nav{flex-wrap:wrap;height:auto;gap:8px;padding:8px 0}
+      .navlinks{width:100%;display:flex;flex-wrap:wrap;gap:10px}
+      .navlinks a{margin:0}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">Gizem Filiz</div>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#cv">CV</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="about">
+      <div class="grid">
+        <img class="avatar" src="headshot.jpg" alt="Professional headshot of Gizem Filiz" />
+        <div>
+          <h1>Hi, I'm Gizem — I study memory and decision-making.</h1>
+          <p class="lead">Ph.D. Candidate, Psychological & Brain Sciences @ Washington University in St. Louis. My research examines <strong>value‑directed remembering</strong>, <strong>recognition memory</strong>, and how <strong>retrieval incentives</strong> shape sensitivity, confidence, and bias—often with <strong>pupillometry</strong> and <strong>drift‑diffusion modeling</strong>.</p>
+          <div class="chips">
+            <span class="chip">Memory</span>
+            <span class="chip">Recognition</span>
+            <span class="chip">Value‑Directed Remembering</span>
+            <span class="chip">Pupillometry</span>
+            <span class="chip">DDM</span>
+          </div>
+          <p style="margin-top:14px">
+            <a class="btn" href="#cv">Download CV</a>
+            <a class="btn-outline" href="#publications">See publications</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="kicker">Dissertation</div>
+          <h3>Retrieval incentives and recognition memory</h3>
+          <p>Across experiments, I test whether <em>gain vs. loss framing</em> at retrieval selectively enhances memory sensitivity, alters response caution, and shifts bias. Designs integrate trial‑level feedback, confidence, and surprise tests, paired with drift‑diffusion analysis.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">Pupillometry</div>
+          <h3>Task‑evoked pupil responses during value shifts</h3>
+          <p>I model how trial‑by‑trial value changes modulate early constriction vs later dilation during encoding, separating automatic arousal from strategic effort using growth‑curve modeling and mixed‑effects analyses.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">Metacognition</div>
+          <h3>Confidence, heuristics, and value source memory</h3>
+          <p>When do value tags get <em>retrieved</em> versus <em>inferred</em>? I examine confidence‑driven response tendencies and their consequences for adaptive control.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">Methods</div>
+          <h3>Signal detection & diffusion models</h3>
+          <p>I combine SDT and DDM to decompose accuracy and RT: drift rate (evidence quality), boundary separation (caution), and starting point (bias).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications & Preprints</h2>
+      <div class="pub">
+        <strong>Filiz, G.</strong>, & Dobbins, I. (2024). Title of article on value source memory. <em>Journal Name</em>, 00(0), 1–20. <a href="#">PDF</a> · <a href="#">DOI</a>
+      </div>
+      <div class="pub">
+        <strong>Filiz, G.</strong>, et al. (2025). Retrieval‑based incentives and recognition memory. <em>Preprint</em>. <a href="#">OSF</a> · <a href="#">PDF</a>
+      </div>
+      <p class="muted">Add more in APA style. You can also link to Google Scholar.</p>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p>Prefer a PDF? <a href="cv_gizem_filiz.pdf">Download it here</a>. You can also add a web version below.</p>
+      <div class="grid-2">
+        <div>
+          <h3>Education</h3>
+          <ul class="list-clean">
+            <li>Ph.D., Psychological & Brain Sciences, Washington University in St. Louis (Year)</li>
+            <li>M.A., (Year)</li>
+            <li>B.A., (Year)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Awards</h3>
+          <ul class="list-clean">
+            <li>APF Dissertation Research Scholarship (Year)</li>
+            <li>Departmental Grant: Value Effect in Second Recognition Testing (Year)</li>
+          </ul>
+        </div>
+      </div>
+      <h3>Selected Talks</h3>
+      <ul class="list-clean">
+        <li>"Retrieval incentives and recognition" – Conference (Year)</li>
+        <li>"Pupil dynamics and value" – Conference (Year)</li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <p>Brief teaching statement and courses/roles (e.g., TA for Cognitive Psychology, Research Methods). Optionally link a 1‑page teaching philosophy PDF.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@wustl.edu">your.email@wustl.edu</a></p>
+      <p>
+        <a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a> ·
+        <a href="https://osf.io" target="_blank" rel="noopener">OSF</a> ·
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>&copy; <span id="y"></span> Gizem Filiz. Built as a lightweight static site for GitHub Pages.</div>
+    </div>
+  </footer>
+
+  <script>
+    // update year
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // smooth scroll for hash links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href'); if(id==="#") return;
+        const el=document.querySelector(id); if(!el) return;
+        e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    })
+  </script>
+</body>
+</html>
